@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'AlfaSlabOne-Regular';
+  src: url("../assets/fonts/AlfaSlabOne-Regular.ttf");
+}
+@font-face {
+  font-family: 'CourierPrime-Regular';
+  src: url("../assets/fonts/CourierPrime-Regular.ttf");
+}
+
+.countercontainer
+{
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  flex-direction: row;
+}
+.winner{
+  animation-name: slideIn,slideInx;
+  animation-duration: 2s;
+  animation-iteration-count: 1,infinite;
+  animation-delay: 0s, 2s;
+  width: 700px;
+  height: 108px;
+}
+.gameboard-container{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+.btn-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  .deal-btn{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(239,206,75);
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    height: 75px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'AlfaSlabOne-Regular';
+    font-size: 45px;
+    padding: 5px;
+    align-items: center;
+    user-select: none;
+  }
+  .deal-btn:hover{
+    background-color: rgba(239,206,75,0.6);
+  }
+  .deal-btn:active{
+    background-color: rgb(239,206,75);
+  }
+  .reset-btn{
+    background-color: rgba(255,255,255,0);
+    border: solid;
+    color: rgb(239,206,75);
+    border-color: rgb(239,206,75);
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-self:flex-end;
+    font-family: 'AlfaSlabOne-Regular';
+    justify-content: center;
+    height: 40px;
+    width: 110px;
+    align-items: center;
+    font-size: 20px;
+    user-select: none;
+    border-radius: 10px;
+    margin-right: 60px;
+  }
+  .reset-btn:hover{
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+    user-select: none;
+  }
+  .reset-btn:active{
+    background-color: rgba(255,255,255,0);
+  }
+  .reset-btn1{
+    background-color: rgba(255,255,255,0);
+    border: solid;
+    color: rgb(239,206,75);
+    border-color: rgb(239,206,75);
+    width: 200px;
+    height: 50px;
+    display: flex;
+    font-family: 'AlfaSlabOne-Regular';
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 15px;
+    user-select: none;
+    align-self: center;
+    margin-bottom: 70px;
+  }
+  .reset-btn1:hover{
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+    user-select: none;
+  }
+  .reset-btn1:active{
+    background-color: rgba(255,255,255,0);
+  }
+}
+.failed{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  color: white;
+  font-size: 30px;
+  font-family: 'CourierPrime-Regular';
+}
+
+@keyframes slideIn {
+  0% {
+    margin-top:-1000px
+  }
+  100%{
+    margin-top: 0px;
+  }
+}
+
+@keyframes slideInx {
+  0%{
+    scale: 1
+  }
+  50%{
+    scale:1.2
+  }
+  100%{scale:1
+  }
+  
+}
+
+@media only screen and (min-width:240px) and (max-width: 900px){
+  .deal-btn{
+    width: 100px!important;
+    height: 25px!important;
+    font-size: 15px!important;
+  }
+  .reset-btn{
+    width: 50px!important;
+    height: 15px!important;
+    font-size: 10px!important;
+  }
+  .reset-btn1{
+    width: 100px!important;
+    height: 25px!important;
+    font-size: 7.5px!important;
+  }
+  .failed{
+    font-size: 15px;
+  }
+ 
+}
+@media only screen and (min-width:240px) and (max-width: 900px) and (orientation :landscape){
+  .reset-btn{
+    position: relative;
+    bottom:100px;
+    margin-right: 150px!important;
+  }
+  .deal-btn{
+    z-index: 2;
+  }
+  .gameboard-container{
+    position: relative!important;
+    top: 50px!important;
+    z-index:1;
+  }
+}

@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'CourierPrime-Bold';
+  src: url("../assets/fonts/CourierPrime-Bold.ttf");
+}
+@font-face {
+  font-family: 'CourierPrime-Regular';
+  src: url("../assets/fonts/CourierPrime-Regular.ttf");
+}
+
+.cardcont{
+  animation-name: slideIn1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+
+.card{
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-direction: column;
+  .card-value{
+    font-family: 'CourierPrime-Bold';
+    color:black;
+    font-size: 65px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 5px;
+  }
+  .card-image{
+    width: 25px;
+    height: 25px;
+    margin-left: 27px;
+    position: relative;
+    top: -20px;
+  }
+  .bgcontainer{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    top: -10px;
+  }
+  .card-imagebg{
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+  }
+}
+}
+.counter-container
+{
+  width: 160px;
+  height: 100px;
+  background-color: black;
+  border: solid;
+  border-width: 1px;
+  border-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+  .left-card
+  {
+    margin-bottom: 0;
+    font-size: 40px;
+    font-family: 'CourierPrime-Bold';
+  }
+  .lefttext{
+    font-family: 'CourierPrime-Regular';
+    position: relative;
+    top: -10px;
+  }
+}
+
+@keyframes slideIn1 {
+  0% {
+    opacity: 0%;
+    //rotate : -360deg;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media only screen and (min-width:240px) and (max-width: 900px){
+  .card{
+    width: 60px!important;
+    height: 80px!important;
+    .card-value{
+      font-family: 'CourierPrime-Bold';
+      color:black;
+      font-size: 26px!important;
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 8px!important;
+      padding-top: 2px!important;
+    }
+    .card-image{
+      width: 10px!important;
+      height: 10px!important;
+      margin-left: 10px!important;
+      position: relative;
+      top: -8px!important;
+    }
+    .bgcontainer{
+      display: flex;
+      position: relative;
+      justify-content: flex-end;
+      top: -4px!important;
+    }
+    .card-imagebg{
+      width: 26px!important;
+      height: 26px!important;
+      margin-right: 8px!important;
+    }
+  }
+ 
+}

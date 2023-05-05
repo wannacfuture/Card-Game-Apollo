@@ -1,0 +1,20 @@
+type Query {
+  deal: [Deal]
+}
+
+type Deal {
+  type: Int
+  value: Int
+}
+
+type ResetMutationResponse {
+  code: String!
+  success: Boolean!
+  message: String!
+  totalArray: [Deal]
+  cansuccess: Int
+}
+
+type Mutation {
+  reset(type: Int, value: Int): ResetMutationResponse
+}

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'AlfaSlabOne-Regular';
+  src: url("./assets/fonts/AlfaSlabOne-Regular.ttf");
+}
+body {
+  margin: 0;
+  font-family: 'AlfaSlabOne-Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
